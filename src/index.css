@@ -1,0 +1,9 @@
+body{
+    background-color: #FFFFFF;
+    padding: 0px 10px;
+}
+
+.example-container{
+    display: flex;
+    gap: 8px;
+}

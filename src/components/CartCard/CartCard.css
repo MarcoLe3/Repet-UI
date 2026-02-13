@@ -1,0 +1,75 @@
+@font-face{
+    font-family: 'Inter';
+    src: url('../../assets/Inter-Medium.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Inter';
+    src: url('../../assets/Inter-Light.woff2') format('woff2');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+.product-card {
+    color: white;
+    font-family: "Inter";
+    border-radius: 24px;
+    width: 350px;
+    height: 400px;
+    gap: 16px;
+    background-color: #1D1F21;
+    padding: 14px 14px;
+    display: flex;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    flex-direction: column;
+    line-height: 1.5;
+}
+
+.product-image {
+    width: auto;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 16px;
+}
+
+.product-info-section {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    width: auto;
+    margin: 0;
+}
+
+.product-details{
+    display: flex;
+    justify-content: space-between;
+    gap: 4px;
+}
+
+.product-title {
+    font-size: 20px;
+    font-weight: 300;
+    margin: 0;
+}
+
+.product-price {
+    font-size: 20px;
+    font-weight: 400;
+    margin: 0;
+}
+
+.product-sale{
+    font-size: 14px;
+    font-weight: 400;
+    margin: 0;
+}
+
+.product-description {
+    font-size: 14px;
+    font-weight: 300;
+    margin: 0;
+}

@@ -1,0 +1,53 @@
+@font-face {
+    font-family: 'Inter';
+    src: url('../../assets/Inter-Medium.woff2') format('woff2');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Inter';
+    src: url('../../assets/Inter-Light.woff2') format('woff2');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+.register-form{
+    font-family: 'Inter';
+    display: flex;
+    flex-direction: column;
+    max-width: 350px;
+    width: fit-content;
+    align-items: center;
+    background-color: #FFFFFF;
+    padding: 20px 20px;
+    border-radius: 24px;
+    gap: 14px;
+    line-height: 1.5;
+}
+
+h2{
+    color: #373530;
+}
+
+input{
+    border-radius: 8px;
+    border: 1px solid #9B9B9B;
+    padding: 8px 15px;
+}
+
+span{
+    font-size: 10px;
+    color: #9B9B9B;
+    font-weight: 400;
+    margin: 0;
+}
+
+label{
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    gap: 4px;
+}

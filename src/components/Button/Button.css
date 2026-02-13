@@ -1,0 +1,44 @@
+@font-face {
+    font-family: 'Inter';
+    src: url('../../assets/Inter-Medium.woff2') format('woff2');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Inter';
+    src: url('../../assets/Inter-Light.woff2') format('woff2');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+.default-button{
+    --btn-bg: rgb(44,44,46);
+    --btn-color: #D4D4D4;
+    --btn-hover-bg: rgb(44,44,46,0.8);
+    --btn-width: fit-content;
+    --btn-border: 1px solid #9B9B9B;
+    --btn-border-radius: 24px;
+    border: var(--btn-border);
+    overflow: hidden;
+    height: 2.5rem;
+    font-size: 14px;
+    padding: 15px 18px;
+    width: var(--btn-width);
+    border-radius: var(--btn-border-radius);
+    background-color: var(--btn-bg);
+    color: var(--btn-color);
+    font-weight: 300;
+    cursor: pointer;
+    font-family: 'Inter';
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+.default-button:hover{
+    background-color: var(--btn-hover-bg);
+}
