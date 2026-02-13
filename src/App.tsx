@@ -1,7 +1,7 @@
-import Button from './components/Button/ButtonComponent';
-import RegisterForm from './components/Authorization/RegisterForm';
-import MainNavBar from './components/Navigation/MainNavbar';
-import ShowcaseCardComponent from "./components/ShowCaseCard/ShowCaseCardComponent";
+import Button from '@/components/Button/ButtonComponent';
+import RegisterForm from '@/components/Authorization/RegisterForm';
+import MainNavBar from '@/components/Navigation/MainNavbar';
+import ShowcaseCardComponent from "@/components/ShowCaseCard/ShowCaseCardComponent";
 import './App.css'
 
 const ExampleItems = {
