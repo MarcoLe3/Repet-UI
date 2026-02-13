@@ -4,7 +4,5 @@
     { "path": "./tsconfig.app.json" },
     { "path": "./tsconfig.node.json" }
   ],
-  "allowjs": true,
-  "strict": false,
-  "noImplicitAny": false
+  "allowjs": true
 }
