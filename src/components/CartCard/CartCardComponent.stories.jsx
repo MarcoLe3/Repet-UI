@@ -12,6 +12,7 @@ export const Default = {
     productPrice: "$19.99",
     productImage: DemoImage,
     productSale: "On Sale",
-    productDescription: "This is a sample product description."
+    productDescription: "This is a sample product description.",
+    componentFocused: true
   },
 };
