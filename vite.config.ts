@@ -15,10 +15,11 @@ const dirname = typeof __dirname !== 'undefined' ? __dirname : path.dirname(file
 
 // More info at: https://storybook.js.org/docs/next/writing-tests/integrations/vitest-addon
 export default defineConfig({
+  root: path.resolve(dirname, 'frontend'),
   plugins: [tailwindcss(),react(), tsconfigPaths()],
   resolve: {
     alias: {
-      '@': path.resolve(__dirname, 'src')
+      '@': path.resolve(__dirname, 'frontend/src')
     }
   },
   test: {
@@ -40,7 +41,7 @@ export default defineConfig({
             browser: 'chromium'
           }]
         },
-        setupFiles: ['.storybook/vitest.setup.ts']
+        setupFiles: [path.join(dirname, '.storybook/vitest.setup.ts')]
       }
     }]
   },

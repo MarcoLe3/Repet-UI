@@ -45,7 +45,7 @@ export default defineConfig({
   },
   build:{
     lib: {
-      entry: resolve(dirname, 'src/index.tsx'), 
+      entry: resolve(dirname, 'frontend/src/index.tsx'), 
       name: 'RepetUI',
       fileName: 'repet-ui',
     },

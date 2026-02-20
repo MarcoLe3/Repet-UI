@@ -4,7 +4,6 @@ import MainNavBar from '@/components/Navigation/MainNavbar';
 import ShowcaseCardComponent from "@/components/ShowCaseCard/ShowCaseCardComponent";
 import CartCardComponent from '@/components/CartCard/CartCardComponent';
 import DemoImage from '../assets/demo.jpg';
-import App from '@/App';
 
 const ExampleItems = {
   button: <Button>Content</Button>,
@@ -20,7 +19,7 @@ const ExampleItems = {
 
 }
 
-function Examples() {
+export default function ExamplesView() {
   return (
     <div className='example-container flex gap-4 flex-wrap'>
       {Object.entries(ExampleItems).map(([key, value]) => (
@@ -31,17 +30,3 @@ function Examples() {
     </div>
   )
 }
-
-
-export const publicRoutes = [
-  {
-    path: '/',
-    element: <App/>,
-    children: [
-      {
-        index: true,
-        element: <Examples />
-      }
-    ],
-  }
-];
