@@ -1,0 +1,16 @@
+{
+    "Component":[
+        {
+            "name": "Button",
+            "description": "Used for common use cases like a \"Add to Cart\" button or navigation"
+        },
+        {
+            "name": "Register",
+            "description": "A register form to create a new account for websites with a login and register system"
+        },
+        {
+            "name": "Subscription",
+            "description": "Used for subscriptions you may see on services like spotify or other applications"
+        }
+    ]
+}

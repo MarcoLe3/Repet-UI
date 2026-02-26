@@ -17,9 +17,10 @@ const dirname = typeof __dirname !== 'undefined' ? __dirname : path.dirname(file
 export default defineConfig({
   root: path.resolve(dirname, 'frontend'),
   plugins: [tailwindcss(),react(), tsconfigPaths()],
+  envDir: '../',
   resolve: {
     alias: {
-      '@': path.resolve(__dirname, 'frontend/src')
+      '@': path.resolve(dirname, 'frontend/src')
     }
   },
   test: {

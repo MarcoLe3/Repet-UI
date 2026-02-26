@@ -1,9 +1,10 @@
 import { useNavigate } from 'react-router-dom';
-import Button from '../Button/ButtonComponent';
+import Button from '@/components/Button/ButtonComponent';
 
 const NavigationItem = {
     Examples: '/',
     Documentation: '/Documentation',
+    // Login: '/Login'
 }
 
 function Navigation() {
@@ -21,7 +22,8 @@ function Navigation() {
                     type="button" 
                     className="rounded-sm hover:bg-[#F1F1EF] cursor-pointer text-md px-2 py-1" 
                     key={key} 
-                    onClick={() => handleNavigation(value)}>{key}
+                    onClick={() => handleNavigation(value)}>
+                        {key}
                 </button>
             ))}
         </div>

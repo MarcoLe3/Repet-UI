@@ -1,5 +1,5 @@
 import './CartCard.css';
-import Button from '../Button/ButtonComponent';
+import Button from '@/components/Button/ButtonComponent';
 import {useState} from 'react';
 
 export default function CartCardComponent(props){

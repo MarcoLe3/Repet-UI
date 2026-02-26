@@ -1,7 +1,9 @@
 import App from '@/App';
-import {lazy} from 'react';
 import ExamplesView from '@/pages/ExampleView';
-const LazyDocumentationView = lazy(() => import('@/pages/DocumentationView'));
+import {lazyLoadPage} from '@/scripts/lazyLoad';
+
+const DocumentationView = lazyLoadPage('DocumentationView');
+const LoginView = lazyLoadPage('LoginView');
 
 export const publicRoutes = [
   {
@@ -14,8 +16,12 @@ export const publicRoutes = [
       },
       {
         path: 'Documentation',
-        element: <LazyDocumentationView />
+        element: <DocumentationView />
       }
     ],
+  },
+  {
+    path: '/login',
+    element: <LoginView />
   }
 ];

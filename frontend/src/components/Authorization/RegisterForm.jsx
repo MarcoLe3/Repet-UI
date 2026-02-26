@@ -1,5 +1,5 @@
 import './RegisterForm.css'
-import Button from '../Button/ButtonComponent';
+import Button from '@/components/Button/ButtonComponent';
 
 export default function RegisterForm(){
     return(
