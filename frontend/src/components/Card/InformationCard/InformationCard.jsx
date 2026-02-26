@@ -1,9 +1,26 @@
+import {useRef} from "react";
 export default function InformationCard(props){
-    const {title, description, image} = props;
+    const {title, description, video} = props;
+    const videoRef = useRef();
+    function playVideo() {
+        videoRef.current?.play();
+    }
+
+    function pauseVideo() {
+        videoRef.current?.pause();
+    }
 
     return (
-        <div className="p-4 w-[500px] h-[380px] border">
-            {image && <img src={image} alt={title} className="mb-2 rounded-md" />}
+        <div className="flex gap-2 flex-col p-2 w-[500px] h-[480px] border">
+            {video && 
+                <video 
+                    src={video} 
+                    className="rounded-2xl w-full h-[300px] object-cover" 
+                    ref={videoRef}
+                    loop
+                    onMouseEnter={playVideo}
+                    onMouseLeave={pauseVideo}
+                />}
             <h3 className="text-xl font-semibold">{title}</h3>
             <p className="text-[#787774] text-lg font-light">{description}</p>
         </div>

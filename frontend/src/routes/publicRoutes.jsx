@@ -16,12 +16,26 @@ export const publicRoutes = [
       },
       {
         path: 'Documentation',
-        element: <DocumentationView />
+        element: <DocumentationView />,
+        children: [
+          {
+            path: 'Start Here',
+            element: <StartHereView />,
+          },
+          {
+            path: "ButtonComponentDocumentation",
+            element: <ButtonComponentDocumentationView />
+          },
+          {
+            path: "RegisterComponentDocumentation",
+            element: <RegisterComponentDocumentationView />
+          },
+          {
+            path: "SubscriptionComponentDocumentation",
+            element: <SubscriptionComponentDocumentationView />
+          }
+        ]
       }
     ],
   },
-  {
-    path: '/login',
-    element: <LoginView />
-  }
 ];

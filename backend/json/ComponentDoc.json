@@ -2,15 +2,18 @@
     "Component":[
         {
             "name": "Button",
-            "description": "Used for common use cases like a \"Add to Cart\" button or navigation"
+            "description": "Used for common use cases like a \"Add to Cart\" button or navigation",
+            "video": "/video/ButtonDemo.mp4"
         },
         {
             "name": "Register",
-            "description": "A register form to create a new account for websites with a login and register system"
+            "description": "A register form to create a new account for websites with a login and register system",
+            "video": "/video/ButtonDemo.mp4"
         },
         {
             "name": "Subscription",
-            "description": "Used for subscriptions you may see on services like spotify or other applications"
+            "description": "Used for subscriptions you may see on services like spotify or other applications",
+            "video": "/video/ButtonDemo.mp4"
         }
     ]
 }

@@ -28,14 +28,16 @@ export default function DocumentationView() {
                 SubSectionOne="Components"
             />
             <div className='flex flex-col gap-8 flex-1'> 
-                <h2 className='text-5xl font-bold'>Guides</h2>
+                <h2 className='text-5xl font-bold'>What's new?</h2>
                 <div className='flex flex-wrap gap-8'>
                     {component_data?.Component?.map((item,index) => {
+                        console.log("video:", item.video);
                         return (
                             <InformationCard
                                 key={index}
                                 title={item.name}
                                 description={item.description}
+                                video={item.video}
                             />
                         );
                     })}
