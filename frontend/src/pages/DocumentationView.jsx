@@ -25,6 +25,7 @@ export default function DocumentationView() {
         <div className="flex gap-8 justify-center w-screen p-8">
             <SideNavbar 
                 Title="Documentation"
+                SubSectionOne="Components"
             />
             <div className='flex flex-col gap-8 flex-1'> 
                 <h2 className='text-5xl font-bold'>Guides</h2>

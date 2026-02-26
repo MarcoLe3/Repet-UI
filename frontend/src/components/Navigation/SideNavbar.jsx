@@ -7,7 +7,7 @@ const componentGuideSection = {
     'Subscription': 'Subscription',
 }
 
-export default function SideNavbar({Title}) {
+export default function SideNavbar({Title, SubSectionOne}) {
     const [isComponentTabOpen,setIsComponentTabOpen] = useState(false);
 
     // useEffect(() => {
@@ -34,7 +34,7 @@ export default function SideNavbar({Title}) {
                     onClick={toggleComponentTab}
                     className="w-full font-small text-left hover:bg-gray-100 px-2 py-1 rounded-sm cursor-pointer"
                 >
-                    Components
+                    {SubSectionOne}
                 </button>
                 {isComponentTabOpen && (
                     <div className="flex flex-col font-small text-[#787774] gap-2">
