@@ -1,4 +1,4 @@
-import MainNavBar from "./components/Navigation/MainNavBar";
+import MainNavBar from "./components/Navigation/MainNavbar";
 import {Outlet} from 'react-router-dom';
 
 function App() {
