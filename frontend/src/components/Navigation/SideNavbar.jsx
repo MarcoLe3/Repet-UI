@@ -22,7 +22,7 @@ export default function SideNavbar({Title, SubSectionOne}) {
     }
 
     return(
-        <div className="flex flex-col w-[250px]">
+        <div className="flex flex-col w-[250px] font-family">
             <div className="flex flex-col items-left">
                 <h3 className="text-lg font-medium">{Title}</h3>
                 <button 

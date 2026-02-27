@@ -1,4 +1,4 @@
-@font-face {
+/* @font-face {
     font-family: 'Inter';
     src: url('@/assets/Inter-Medium.woff2') format('woff2');
     font-weight: 500;
@@ -12,7 +12,7 @@
     font-weight: 300;
     font-style: normal;
     font-display: swap;
-}
+} */
 
 .register-form{
     font-family: 'Inter';

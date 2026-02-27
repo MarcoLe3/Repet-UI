@@ -3,7 +3,7 @@ import Button from '@/components/Button/ButtonComponent';
 
 export default function RegisterForm(){
     return(
-        <form className="register-form font-inter">
+        <form className="register-form font-family">
             <h2 className='text-2xl'>Create Your Account</h2>
             <label>
                 <span>Email</span>
