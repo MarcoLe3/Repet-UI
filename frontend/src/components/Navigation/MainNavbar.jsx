@@ -32,7 +32,7 @@ function Navigation() {
 
 export default function MainNavBar() {
     return (
-        <nav className='relative flex items-center p-4 font-family'>
+        <nav className='relative flex items-center p-4'>
             <h1 className='text-3xl font-bold'>RepetUI</h1>
             <div className='absolute left-2/5'>
                 <Navigation />

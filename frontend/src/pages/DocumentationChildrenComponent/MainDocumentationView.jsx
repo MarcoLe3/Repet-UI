@@ -29,6 +29,7 @@ export default function MainDocumentationView({Content}) {
     return (
         <div className='flex flex-col gap-8 flex-1'> 
             <h2 className='text-5xl font-bold'>What's new?</h2>
+            <hr className="border-[#D4D4D4CC]"/>
             <div className='flex flex-wrap gap-8'>
                 {component_data?.Component?.map((item,index) => {
                     console.log("video:", item.video);
