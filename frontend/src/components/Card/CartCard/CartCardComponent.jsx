@@ -6,7 +6,7 @@ export default function CartCardComponent(props){
     const {productName, productPrice, productImage, productSale, productDescription, componentFocused} = props;
 
     return (
-            <div className={`product-card border-2 ${componentFocused ? 'border-[rgb(0,136,255)]' : 'border-[#D4D4D4CC]'}`}>
+            <div className={`product-card border-2 font-inter ${componentFocused ? 'border-[rgb(0,136,255)]' : 'border-[#D4D4D4CC]'}`}>
                 <img className='product-image' src={productImage} alt={productName} />
                 <div className='product-info-section'>
                     <p className={`product-sale ${productSale ? 'visible' : 'hidden'}`}>{productSale}</p>

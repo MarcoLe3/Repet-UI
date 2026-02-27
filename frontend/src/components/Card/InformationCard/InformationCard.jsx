@@ -11,7 +11,7 @@ export default function InformationCard(props){
     }
 
     return (
-        <div className="flex gap-2 flex-col p-2 w-[500px] h-[480px] border">
+        <div className="flex gap-2 margin-0 flex-col p-2 w-[500px] h-[420px]">
             {video && 
                 <video 
                     src={video} 

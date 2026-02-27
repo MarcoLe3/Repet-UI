@@ -23,7 +23,7 @@ app.use(cors({
     origin: allowedOrigins
 }));
 
-app.get('/Documentation', (req, res) => {
+app.get('/api/component', (req, res) => {
     res.json(ComponentData);
 });
 

@@ -12,7 +12,7 @@ const ExampleItems = {
     productName="Sample Product"
     productPrice="$19.99"
     productImage={DemoImage}
-    productSale="20% Off"
+    productSale="$20.99"
     productDescription="This is a sample product description."
     componentFocused={true}
   />,

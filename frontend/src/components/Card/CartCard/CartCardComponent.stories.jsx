@@ -11,7 +11,7 @@ export const Default = {
     productName: "Sample Product",
     productPrice: "$19.99",
     productImage: DemoImage,
-    productSale: "On Sale",
+    productSale: "$20.99",
     productDescription: "This is a sample product description.",
     componentFocused: true
   },

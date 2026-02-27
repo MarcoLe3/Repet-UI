@@ -1,9 +1,10 @@
 import App from '@/App';
 import ExamplesView from '@/pages/ExampleView';
 import {lazyLoadPage} from '@/scripts/lazyLoad';
+import MainDocumentationView from '@/pages/DocumentationChildrenComponent/MainDocumentationView';
+import StartHereView from '@/pages/DocumentationChildrenComponent/StartHereView';
 
 const DocumentationView = lazyLoadPage('DocumentationView');
-const LoginView = lazyLoadPage('LoginView');
 
 export const publicRoutes = [
   {
@@ -17,24 +18,28 @@ export const publicRoutes = [
       {
         path: 'Documentation',
         element: <DocumentationView />,
-        // children: [
-        //   {
-        //     path: 'Start Here',
-        //     element: <StartHereView />,
-        //   },
-        //   {
-        //     path: "ButtonComponentDocumentation",
-        //     element: <ButtonComponentDocumentationView />
-        //   },
-        //   {
-        //     path: "RegisterComponentDocumentation",
-        //     element: <RegisterComponentDocumentationView />
-        //   },
-        //   {
-        //     path: "SubscriptionComponentDocumentation",
-        //     element: <SubscriptionComponentDocumentationView />
-        //   }
-        // ]
+        children: [
+          {
+            index: true,
+            element: <MainDocumentationView/>
+          },
+          {
+            path: 'StartHere',
+            element: <StartHereView />,
+          }
+          // {
+          //   path: "ButtonComponentDocumentation",
+          //   element: <ButtonComponentDocumentationView />
+          // },
+          // {
+          //   path: "RegisterComponentDocumentation",
+          //   element: <RegisterComponentDocumentationView />
+          // },
+          // {
+          //   path: "SubscriptionComponentDocumentation",
+          //   element: <SubscriptionComponentDocumentationView />
+          // }
+        ]
       }
     ],
   },

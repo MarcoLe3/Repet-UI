@@ -1,48 +1,17 @@
 import * as React from 'react';
-import InformationCard from '@/components/Card/InformationCard/InformationCard';
 import SideNavbar from '../components/Navigation/SideNavbar';
 import { FactoryPath } from '@/scripts/FactoryPath';
+import { Outlet } from 'react-router-dom';
 
 export default function DocumentationView() {
-    const [component_data, setComponentData] = React.useState(null);
-    const documentationPath = FactoryPath({fileOrigin: '/Documentation'});
-
-    React.useEffect(() => {
-        fetchComponentData();
-    }, []);
-
-    async function fetchComponentData() {
-        try {
-            const res = await fetch(documentationPath.OrganizePath());
-            const data = await res.json();
-            setComponentData(data);
-        } catch (error) {
-            console.error('Error fetching documentation:', error);
-        }
-    }
-
     return (
         <div className="flex gap-8 justify-center w-screen p-8">
             <SideNavbar 
                 Title="Documentation"
                 SubSectionOne="Components"
+                className="flex-0"
             />
-            <div className='flex flex-col gap-8 flex-1'> 
-                <h2 className='text-5xl font-bold'>What's new?</h2>
-                <div className='flex flex-wrap gap-8'>
-                    {component_data?.Component?.map((item,index) => {
-                        console.log("video:", item.video);
-                        return (
-                            <InformationCard
-                                key={index}
-                                title={item.name}
-                                description={item.description}
-                                video={item.video}
-                            />
-                        );
-                    })}
-                </div>
-            </div>
+            <Outlet />
         </div>
     );
 }
