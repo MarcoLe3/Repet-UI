@@ -17,7 +17,7 @@ export default async function DocumentationPage({params}) {
             <hr className="border-custom-gray"/>
             <div className="border-1 border-custom-gray w-full h-[500px]">
                 <SpecificComponent {...component_data.props} />
-                <CodeCard/>
+                {/* <CodeCard/> */}
             </div>
         </div>
     );
