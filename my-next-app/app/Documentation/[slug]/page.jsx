@@ -1,5 +1,6 @@
 import { fetchSpecificComponentData } from "@/scripts/fetchComponentData";
 import dynamic from "next/dynamic";
+import CodeCard from "@/components/Card/CodeCard/CodeCard";
 
 const Component_Map = {
     'Button': dynamic(()=> import('@/components/Button/ButtonComponent')),
@@ -14,7 +15,10 @@ export default async function DocumentationPage({params}) {
         <div className="flex flex-col gap-8">
             <h1 className='text-5xl font-semibold'>{slug}</h1>
             <hr className="border-custom-gray"/>
-            <SpecificComponent {...component_data.props} />
+            <div className="border-1 border-custom-gray w-full h-[500px]">
+                <SpecificComponent {...component_data.props} />
+                <CodeCard/>
+            </div>
         </div>
     );
 }

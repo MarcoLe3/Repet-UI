@@ -8,7 +8,7 @@ export default function Home() {
       <MainNavBar />
       <main className="flex flex-col">
         <HeroCard />
-        <Examples />
+        {/* <Examples /> */}
       </main>
     </>
   );

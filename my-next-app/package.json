@@ -9,7 +9,10 @@
     "lint": "eslint",
     "storybook": "storybook dev -p 6006",
     "build-storybook": "storybook build",
-    "env:pull": "npx vercel env pull .env.local"
+    "env:pull": "npx vercel env pull .env.local",
+    "lib:build": "tsup src/index.ts --format esm,cjs --dts --clean --minify",
+    "lib:dev": "tsup src/index.ts --format esm,cjs --watch --dts",
+    "lib:lint": "tsc"
   },
   "dependencies": {
     "@neondatabase/serverless": "^1.0.2",

@@ -1,4 +1,4 @@
-import SideNavbar from '@/components/Navigation/SideNavbar';
+import SideNavbar from '@/components/Navigation/DocumentationSideNavbar';
 import { fetchComponentData } from '@/scripts/fetchComponentData';
 import MainNavBar from '@/components/Navigation/MainNavbar';
 
@@ -10,9 +10,7 @@ export default async function DocumentationPage({children}) {
             <MainNavBar />
             <div className="flex gap-8 justify-center w-screen p-8">
                 <aside>
-                    <SideNavbar 
-                        Title="Documentation"
-                        SubSectionOne="Components"
+                    <SideNavbar
                         data={component_data}
                     />
                 </aside>

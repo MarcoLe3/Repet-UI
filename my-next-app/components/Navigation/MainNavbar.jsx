@@ -28,7 +28,7 @@ function Navigation() {
 export default function MainNavBar() {
     return (
         <nav className=' flex items-center justify-between p-4 bg-background-second'>
-            <h1 className='text-3xl font-bold'>RepetUI</h1>
+            <h1 className='text-xl font-semibold'>peanut.design</h1>
             <div className=''>
                 <Navigation />
             </div>
