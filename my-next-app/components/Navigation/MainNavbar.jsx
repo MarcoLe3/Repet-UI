@@ -3,12 +3,12 @@
 import Link from 'next/link';
 
 const NavigationItem = {
-    Examples: '/',
+    Home: '/',
     Documentation: '/Documentation',
 }
 
 function Navigation() {
-    const {Examples, Documentation} = NavigationItem;
+    const {Home, Documentation} = NavigationItem;
 
     return (
         <div className='flex gap-2'>

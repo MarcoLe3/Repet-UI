@@ -15,9 +15,8 @@ export default async function DocumentationPage({params}) {
         <div className="flex flex-col gap-8">
             <h1 className='text-5xl font-semibold'>{slug}</h1>
             <hr className="border-custom-gray"/>
-            <div className="border-1 border-custom-gray w-full h-[500px]">
+            <div className="w-full h-[500px]">
                 <SpecificComponent {...component_data.props} />
-                {/* <CodeCard/> */}
             </div>
         </div>
     );

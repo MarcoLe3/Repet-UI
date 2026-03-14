@@ -18,8 +18,14 @@ export default function SideNavbar({data, Title}) {
 
     return(
         <div className="flex flex-col px-4 w-[250px] h-[80vh] overflow-y-auto">
-            <div className="flex flex-col items-left">
-                <h3 className="text-lg font-medium">Documentation</h3>
+            <div className="flex flex-col items-left ">
+                <h3 className='font-semibold text-lg px-2 py-1'> Documentation</h3>
+                <Link
+                    className="w-full font-small text-left hover:bg-custom-gray-light px-2 py-1 rounded-sm cursor-pointer"
+                    href={"/Documentation"}
+                >
+                    Start Here
+                </Link>
                 <button 
                     onClick={toggleComponentTab}
                     className="w-full font-small text-left hover:bg-custom-gray-light px-2 py-1 rounded-sm cursor-pointer"
